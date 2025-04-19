@@ -8,6 +8,7 @@ import Map from "./Map";
 import Footer from "./Footer";
 import Gallery from "./Gallery"; // Import Gallery component
 import ContactUs from "./ContactUs";
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
               <Parallax />
               <Map />
               <Footer />
+              <Analytics />
             </>
           }
         />
