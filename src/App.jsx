@@ -7,6 +7,7 @@ import Parallax from "./Parallax";
 import Map from "./Map";
 import Footer from "./Footer";
 import Gallery from "./Gallery"; // Import Gallery component
+import ContactUs from "./ContactUs";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           }
         />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
     </Router>
   );

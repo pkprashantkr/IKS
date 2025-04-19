@@ -1,27 +1,26 @@
-import { Facebook, Twitter, Linkedin } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer id="contact-us" className="bg-black text-white py-10">
-      <div className="container mx-auto px-6 grid md:grid-cols-4 gap-8">
+      <div className="container mx-auto px-12 grid md:grid-cols-4 gap-10">
         {/* About Us */}
         <div>
           <h3 className="text-xl font-bold mb-3">ABOUT US</h3>
           <p className="text-gray-400 text-sm">
-            International Equipment Co. is one of the leading commercial food
-            service equipment importers and suppliers in India. A team of
-            professionals with vast experience and in-depth knowledge of the
-            Hospitality Industry.
+            International Kitchen Solutions is one of the leading importers and
+            suppliers of commercial kitchen equipment in India. Backed by a team
+            of seasoned professionals with extensive experience and deep
+            expertise in the hospitality industry, we are committed to
+            delivering innovative and high-quality kitchen solutions to meet the
+            diverse needs of our clients.
           </p>
           <div className="flex gap-3 mt-4">
             <a href="#" className="border border-orange-500 p-1 rounded">
               <Facebook className="text-orange-500" />
             </a>
             <a href="#" className="border border-orange-500 p-1 rounded">
-              <Twitter className="text-orange-500" />
-            </a>
-            <a href="#" className="border border-orange-500 p-1 rounded">
-              <Linkedin className="text-orange-500" />
+              <Instagram className="text-orange-500" />
             </a>
           </div>
         </div>
@@ -46,35 +45,27 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="#contact-us"
+                href="/contact"
                 className="hover:text-orange-500 transition-colors"
               >
                 Contact us
               </a>
             </li>
+
             <li>
-              <a href="#" className="hover:text-orange-500 transition-colors">
-                Privacy Policy
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-orange-500 transition-colors">
-                Payment
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-orange-500 transition-colors">
+              <a
+                href="#sitemap"
+                className="hover:text-orange-500 transition-colors"
+              >
                 Sitemap
               </a>
             </li>
             <li>
-              <a href="/gallery" className="hover:text-orange-500 transition-colors">
+              <a
+                href="/gallery"
+                className="hover:text-orange-500 transition-colors"
+              >
                 Gallery
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-orange-500 transition-colors">
-                Videos
               </a>
             </li>
           </ul>
@@ -128,7 +119,7 @@ export default function Footer() {
         </div>
 
         {/* Contact Us */}
-        <div>
+        <div className="space-y-1">
           <h3 className="text-xl font-bold mb-3">CONTACT US</h3>
           <p className="text-gray-400 text-sm flex items-center gap-2">
             <i className="fas fa-envelope text-orange-500"></i>{" "}
@@ -147,7 +138,7 @@ export default function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="mt-10 text-center text-gray-400 text-sm border-t border-gray-600 pt-4">
+      <div className="mt-10 text-center text-gray-400 text-sm  border-gray-600 pt-0">
         © Copyright <span className="text-orange-500">IKS 2025</span>. All
         Rights Reserved
         <br />

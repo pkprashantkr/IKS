@@ -18,6 +18,7 @@ const Gallery = () => {
     image6,
     image7,
     image8,
+    
   ];
 
   return (

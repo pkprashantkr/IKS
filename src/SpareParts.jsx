@@ -47,11 +47,11 @@ export default function SpareParts() {
         <p className="text-gray-600 mb-8">
           International Equipment Co. has pan-India Sales of Spare Parts
         </p>
-        <div className="grid md:grid-cols-3 gap-8 px-6">
+        <div className="grid md:grid-cols-3 gap-8 px-6 ">
           {parts.map((part, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-md flex items-start space-x-4 border-l-4 border-blue-600"
+              className="bg-white p-6 rounded-lg shadow-md flex items-start space-x-4 border-l-4 border-blue-600 hover:scale-105 duration-200"
             >
               <div className="text-4xl">{part.icon}</div>
               <div>

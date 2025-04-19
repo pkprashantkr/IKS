@@ -8,6 +8,7 @@ import {
   Linkedin,
   Menu,
   X,
+  Link,
 } from "lucide-react";
 import logo from "./assets/logo.png";
 
@@ -37,14 +38,9 @@ const Navbar = () => {
           <a href="#" className="text-orange-500 hover:text-white">
             <Facebook />
           </a>
-          <a href="#" className="text-orange-500 hover:text-white">
-            <Twitter />
-          </a>
+
           <a href="#" className="text-orange-500 hover:text-white">
             <Instagram />
-          </a>
-          <a href="#" className="text-orange-500 hover:text-white">
-            <Linkedin />
           </a>
         </div>
       </div>
@@ -62,7 +58,7 @@ const Navbar = () => {
             <li className="hover:text-orange-500 cursor-pointer">Home</li>
           </a>
           <a href="#about-us">
-            <li  className="hover:text-orange-500 cursor-pointer">About us</li>
+            <li className="hover:text-orange-500 cursor-pointer">About us</li>
           </a>
           <a href="/gallery">
             <li className="hover:text-orange-500 cursor-pointer">Gallery</li>
@@ -72,7 +68,7 @@ const Navbar = () => {
               Testimonials
             </li>
           </a>
-          <a href="#contact-us">
+          <a href="/contact">
             <li className="hover:text-orange-500 cursor-pointer">Contact us</li>
           </a>
         </ul>
@@ -107,21 +103,22 @@ const Navbar = () => {
           >
             <X />
           </button>
-          <a href="#" className="hover:text-orange-500">
+          <a href="/" className="hover:text-orange-500">
             Home
           </a>
-          <a href="#" className="hover:text-orange-500">
+          <a href="#about-us" className="hover:text-orange-500">
             About Us
           </a>
-          <a href="#" className="hover:text-orange-500">
+          <a href="/gallery" className="hover:text-orange-500">
             Gallery
           </a>
-          <a href="#" className="hover:text-orange-500">
+          <a href="#testimonials" className="hover:text-orange-500">
             Testimonials
           </a>
-          <a href="#" className="hover:text-orange-500">
+          <a href="/contact" className="hover:text-orange-500">
             Contact Us
           </a>
+          
         </div>
       </div>
     </>
